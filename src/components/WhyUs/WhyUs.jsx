@@ -1,4 +1,5 @@
 import ChooseBox from "../ChooseBox";
+import "./WhyUs.css";
 import React from "react";
 import BitHand from "../../images/chooseus/choose-main.png";
 import {

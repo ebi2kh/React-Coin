@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./Coin.css";
 import { useParams } from "react-router-dom";
 import DOMPurify from "dompurify";
 import { numberWithCommas } from "../utils/utils";
