@@ -1,0 +1,130 @@
+nav {
+  font-family: "Space Grotesk", sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 200;
+}
+nav a {
+  color: #f3f2f4;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 120rem;
+  margin: 0 auto;
+  font-size: 2rem;
+  padding: 3rem 2rem;
+  align-items: center;
+  color: #f3f2f4;
+}
+.navbar p {
+  font-size: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.navbar ul {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+@media (max-width: 750px) {
+  .navbar ul {
+    display: none;
+  }
+}
+.navbar ul a {
+  color: #f3f2f4;
+  font-weight: 700;
+}
+.navbar ul a:hover {
+  transition: all 0.3s;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+}
+.navbar span {
+  display: flex;
+  gap: 2rem;
+}
+.navbar span i {
+  cursor: pointer;
+}
+@media (max-width: 750px) {
+  .navbar span i {
+    display: none;
+  }
+}
+.navbar span i:hover {
+  transition: all 0.3s;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+}
+.hamburger-menu {
+  display: none;
+  font-size: 2.7rem;
+}
+@media (max-width: 750px) {
+  .hamburger-menu {
+    display: flex !important;
+  }
+}
+.sticky-nav {
+  background-color: #0f051d;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.16);
+  position: fixed;
+}
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #f3f2f4;
+  z-index: 9999999;
+  color: #0f051d;
+  font-size: 3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  list-style: none;
+}
+.mobile-nav ul a {
+  color: #0f051d;
+  font-weight: 600;
+}
+.mobile-nav ul a:hover {
+  transition: all 0.3s;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+}
+.mobile-up {
+  left: 0;
+}
+.close-mobile {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  cursor: pointer;
+}
+.close-mobile:hover {
+  transition: all 0.3s;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+}

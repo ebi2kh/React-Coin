@@ -38,9 +38,8 @@
 }
 @media (max-width: 800px) {
   .market-content__coin-list .market-content__coin-list__top {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    /* justify-content: space-between; */
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media (max-width: 800px) {

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { numberWithCommas } from "../utils/utils";
 import { MainfetchCoins } from "../utils/api";
-import "./MarketUpdate";
+import "./MarketUpdate.css";
 function MarketUpdate() {
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);

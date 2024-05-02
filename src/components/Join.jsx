@@ -1,6 +1,6 @@
 import Btc from "../images/hero/bitcoin.png";
 import Eth from "../images/hero/ethereum.png";
-
+import "./Join.css";
 function Join() {
   return (
     <>

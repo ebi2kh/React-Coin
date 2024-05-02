@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./Hero.css";
 import Btc from "../images/hero/bitcoin.png";
 import Eth from "../images/hero/ethereum.png";
 import { Link } from "react-router-dom";

@@ -1,11 +1,26 @@
-import React from "react";
+import Home from "./pages/Home";
+// import "../src/dist/styles.css";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Coin from "./pages/Coin";
+import Footer from "./components/Footer";
 
-const App = () => (
-  <>
-    {/* Mirrored from istgahedandan.ir/rahmani/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Dec 2023 17:59:56 GMT */}
-
-    <div>hello</div>
-  </>
-);
+function App() {
+  return (
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/coin" element={<Coin />}>
+            <Route path=":coinId" element={<Coin />}></Route>
+          </Route>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
+  );
+}
 
 export default App;

@@ -1,3 +1,4 @@
+import "./Navbar.css";
 import {
   IconBrandDiscord,
   IconBrandTwitter,
