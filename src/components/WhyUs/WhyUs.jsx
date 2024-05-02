@@ -28,7 +28,7 @@ function WhyUs() {
         <div className="container">
           <div className="choose-container">
             <h2>
-              why <span>choose us</span>
+              <span>چرا ما را انتخاب کنید</span>
             </h2>
             <div className="choose-container__content">
               {chooseBoxData.map((item, index) => (

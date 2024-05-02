@@ -49,7 +49,7 @@ function MarketUpdate() {
       <section id="market" className="market-section">
         <div className="container">
           <div className="market-content">
-            <h2>Market Update</h2>
+            <h2>تغییرات بازار</h2>
             <div className="market-content__coin-list">
               <div
                 className="market-content__coin-list__top"
@@ -59,14 +59,14 @@ function MarketUpdate() {
 
                 // }}
               >
-                <p>Coin</p>
-                <p>Price</p>
-                <p>24h Change</p>
-                <p>Market Cap</p>
-                <p>24h High</p>
-                <p>24h Low</p>
-                <p>Price Change 24h</p>
-                <p>Price Change % 24h</p>
+                <p>توکن</p>
+                <p>قیمت</p>
+                <p>تغییرات ۲۴ ساعته</p>
+                <p>مارکت کپ</p>
+                <p>بالاترین قیمت۲۴ ساعت</p>
+                <p>پایین‌ترین قیمت۲۴ ساعت</p>
+
+                <p>درصد تغییرات ۲۴ ساعته</p>
               </div>
               <div className="market-content__coin-list__row">
                 {data.map((item) => (
@@ -88,13 +88,24 @@ function MarketUpdate() {
                           : "red-text")
                       }
                     >
-                      {item.price_change_percentage_24h?.toFixed(2) + " %"}
+                      {item.price_change_percentage_24h >= 0 ? "+ " : "- "}
+                      {Math.abs(item.price_change_percentage_24h).toFixed(2) +
+                        " %"}
                     </p>
                     <p>{"$ " + numberWithCommas(item.market_cap)}</p>
                     <p>{"$ " + item.high_24h.toFixed(2)}</p>
                     <p>{"$ " + item.low_24h.toFixed(2)}</p>
-                    <p>{"$ " + item.price_change_24h.toFixed(2)}</p>
-                    <p>{item.price_change_percentage_24h.toFixed(2) + " %"}</p>
+                    <p
+                      className={
+                        item.price_change_percentage_24h >= 0
+                          ? "green-text"
+                          : "red-text"
+                      }
+                    >
+                      {item.price_change_percentage_24h >= 0 ? "+ " : "- "}
+                      {Math.abs(item.price_change_percentage_24h).toFixed(2) +
+                        " %"}
+                    </p>{" "}
                   </Link>
                 ))}
               </div>

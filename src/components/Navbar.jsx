@@ -38,21 +38,21 @@ function Navbar() {
       <nav className={sticky ? "sticky-nav" : ""}>
         <div className="navbar">
           <Link to="/">
-            <p onClick={goTop}>COINDOM</p>
+            <p onClick={goTop}>ریکت‌کوین</p>
           </Link>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a href="#home">خانه</a>
             </li>
             <li>
-              <a href="#market">Market</a>
+              <a href="#market">مارکت</a>
             </li>
             <li>
-              <a href="#choose-us">Choose Us</a>
+              <a href="#choose-us">انتخاب ما</a>
             </li>
-            <li>
-              <a href="#join">Join</a>
-            </li>
+            {/* <li>
+              <a href="#join"></a>
+            </li> */}
           </ul>
           <span>
             <IconBrandTwitter />
@@ -68,17 +68,17 @@ function Navbar() {
         <IconX onClick={openMobile} className="close-mobile" />
         <ul>
           <li onClick={openMobile}>
-            <a href="#home">Home</a>
+            <a href="#home">خانه</a>
           </li>
           <li onClick={openMobile}>
-            <a href="#market">Market</a>
+            <a href="#market">مارکت</a>
           </li>
           <li onClick={openMobile}>
-            <a href="#choose-us">Choose Us</a>
+            <a href="#choose-us">انتخاب ما</a>
           </li>
-          <li onClick={openMobile}>
+          {/* <li onClick={openMobile}>
             <a href="#join">Join</a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </>

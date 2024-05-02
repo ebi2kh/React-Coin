@@ -59,7 +59,7 @@ function Coin() {
                   </p>
                 </div>
 
-                <div className="coin-content__text-side__current">
+                <div className="coin-content__text-side__24h">
                   <span>قیمت:</span>
                   <p className={"green-text"}>
                     {coin.market_data
@@ -77,17 +77,6 @@ function Coin() {
               </div>
               {/* //////////// */}
               <div className="numb">
-                <div className="coin-content__text-side__24h">
-                  <span>تغییرات ۲۴ ساعته:</span>
-                  <p className={h24 >= 0 ? "green-text" : "red-text"}>
-                    {coin.market_data
-                      ? coin.market_data.price_change_percentage_24h.toFixed(
-                          2
-                        ) + "%"
-                      : ""}
-                  </p>
-                </div>
-
                 <div className="coin-content__text-side__24h">
                   <span>تغییرات ۷ روزه:</span>
                   <p
@@ -120,8 +109,6 @@ function Coin() {
                       : ""}
                   </p>
                 </div>
-              </div>
-              <div className="numb">
                 <div className="coin-content__text-side__24h">
                   <span>تغییرات ۳۰ روزه:</span>
                   <p
@@ -138,7 +125,8 @@ function Coin() {
                       : ""}
                   </p>
                 </div>
-
+              </div>
+              <div className="numb">
                 <div className="coin-content__text-side__24h">
                   <span>تغییرات ۶۰ روزه:</span>
                   <p
@@ -178,32 +166,16 @@ function Coin() {
                   <span>رتبه مارکت کپ :</span>
                   <p className={"green-text"}>{coin.market_cap_rank}</p>
                 </div>
-
-                <div className="coin-content__text-side__current">
-                  <span>قیمت:</span>
-                  <p className={"green-text"}>
-                    {coin.market_data
-                      ? "$" +
-                        numberWithCommas(
-                          coin.market_data.current_price.usd.toFixed(2)
-                        )
-                      : null}
-                  </p>
-                </div>
-                <div className="coin-content__text-side__symbol">
-                  <p>سیمبل:</p>
-                  <span>{coin.symbol}</span>
-                </div>
               </div>
-              <div className="description">
+              {/* <div className="description">
                 <p
                   dangerouslySetInnerHTML={{
                     __html: DOMPurify.sanitize(
                       coin.description ? coin.description.en : ""
                     ),
                   }}
-                ></p>
-              </div>
+                ></p> */}
+              {/* </div> */}
             </div>
           </div>
         </div>

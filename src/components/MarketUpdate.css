@@ -1,11 +1,10 @@
 .market-section {
   background-color: #0f051d;
-  padding: 5rem 0;
-}
-.market-content {
   display: flex;
   flex-direction: row;
+  padding: 5rem 0;
 }
+
 .market-content h2 {
   color: #f3f2f4;
   font-size: 4.5rem;
@@ -18,10 +17,12 @@
 }
 .market-content__coin-list {
   width: 100%;
+  padding-left: 23px;
+  padding-right: 23px;
   height: auto;
   display: flex;
   flex-direction: column;
-  white-space: nowrap;
+  white-space: break-spaces;
   overflow-x: auto;
 }
 .market-content__coin-list .market-content__coin-list__top {
@@ -53,15 +54,16 @@
     width: fit-content;
   }
 }
-.market-content__coin-list .market-content__coin-list__top p:first-child {
+/* .market-content__coin-list .market-content__coin-list__top p:first-child {
   text-align: left;
-}
+} */
 .market-content__coin-list__row {
   display: flex;
   flex-direction: column;
 }
 .market-content__coin-list__pagination {
   display: flex;
+  flex-direction: row;
   gap: 1.3rem;
   justify-content: center;
   align-items: center;
