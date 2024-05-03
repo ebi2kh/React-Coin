@@ -60,11 +60,11 @@ html {
 }
 body {
   position: relative;
-  font-family: "Space Grotesk", sans-serif;
 }
 a {
   text-decoration: none;
 }
+
 /* .container {
   max-width: 130rem !important;
   margin: 0 auto !important;

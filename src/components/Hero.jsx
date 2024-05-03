@@ -32,7 +32,11 @@ function Hero() {
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return (
+      <div className="market-content__error-message">
+        {error} please refresh
+      </div>
+    );
   }
 
   return (

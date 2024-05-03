@@ -30,7 +30,11 @@ function MarketUpdate() {
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return (
+      <div className="market-content__error-message">
+        {error} please refresh
+      </div>
+    );
   }
 
   const scrollMarket = () => {
@@ -44,6 +48,9 @@ function MarketUpdate() {
     window.scrollTo({ top: (0, 0), behavior: "smooth" });
   };
 
+  if (error) {
+    return <div className="market-content__error-message">l: {error}</div>;
+  }
   return (
     <>
       <section id="market" className="market-section">

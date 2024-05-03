@@ -39,9 +39,9 @@ function WhyUs() {
                   text={item.text}
                 />
               ))}
-              <div className="choose-container__content__2">
+              {/* <div className="choose-container__content__2">
                 <img src={BitHand} alt="hand_img" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
